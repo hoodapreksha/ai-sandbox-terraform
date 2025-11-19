@@ -1,0 +1,16 @@
+# Ignore local terraform working directories
+**/.terraform/*
+
+#ignore terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Ignore crash logs
+crash.log
+
+# Ignore variable values file
+terraform.tfvars
+*.tfvars
+
+#Ignore local LCI lock file for provider versions
+.terraform.lock.hcl
