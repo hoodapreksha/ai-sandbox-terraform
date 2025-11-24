@@ -7,12 +7,12 @@ terraform {
       version = "~> 4.0"
     }
   }
-  
+
   backend "azurerm" {
-    resource_group_name = "rg-ai-sandbox-sandbox"
+    resource_group_name  = "rg-ai-sandbox-sandbox"
     storage_account_name = "staisandboxtfstate"
-    container_name = "tfstate"
-    key = "sandbox.terraform.tfstate"
+    container_name       = "tfstate"
+    key                  = "sandbox.terraform.tfstate"
   }
-  
+
 }
